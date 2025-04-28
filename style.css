@@ -1,0 +1,38 @@
+body {
+    padding-top: 70px;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .profile-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .skills-list, .tools-list {
+    margin-top: 20px;
+  }
+  
+  /* New CSS for interactive education logos */
+  .school-logo img {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .school-logo:hover img {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .school-logo:active img {
+    box-shadow: 0 0 30px rgba(0, 123, 255, 1);
+    transform: scale(1.1);
+  }
+  
