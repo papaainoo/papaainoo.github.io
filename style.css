@@ -85,17 +85,24 @@ p {
 }
 
 .skills-list li, .tools-list li {
-  background-color: #0d3b66;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-weight: 600;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 400; /* Softer font weight */
   font-size: 0.9rem;
-  box-shadow: 0 3px 10px rgb(13 59 102 / 0.3);
+  border: 1px solid #ddd;
   flex: 1 1 auto;
-  min-width: 220px;
+  min-width: 180px;
   max-width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.skills-list li:hover, .tools-list li:hover {
+  background-color: #e0e0e0;
+  color: #111;
+}
+
 
 /* === Education, Experience, Collaboration, Projects, Certifications === */
 /* Common Card style */
@@ -153,4 +160,13 @@ p.text-muted {
   .skills-list li, .tools-list li {
     min-width: 100%;
   }
+}
+
+
+#contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  color: #333;
 }
