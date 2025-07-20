@@ -11,6 +11,25 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
+<script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (const el of reveals) {
+      const windowHeight = window.innerHeight;
+      const revealTop = el.getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (revealTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+
 <body>
 
   <!-- Navbar -->
@@ -35,7 +54,7 @@
   </nav>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <div class="container">
       <div class="row">
         <!-- Left Side (Photo + Skills) -->
@@ -73,7 +92,7 @@
   </section>
 
   <!-- Education -->
-  <section id="education" class="section bg-light">
+  <section id="education" class="section bg-light reveal">
     <div class="container">
       <h2 class="text-center mb-5">Education</h2>
       <div class="row justify-content-center text-center">
@@ -97,7 +116,7 @@
   </section>
 
   <!-- Work Experience -->
-  <section id="experience" class="section bg-light">
+  <section id="experience" class="section bg-light reveal">
     <div class="container">
       <h2 class="text-center mb-5">Work Experience</h2>
       <div class="row justify-content-center text-center">
@@ -129,7 +148,7 @@
   </section>
 
   <!-- Collaboration -->
-  <section id="collaboration" class="section bg-light">
+  <section id="collaboration" class="section bg-light reveal">
     <div class="container">
       <h2 class="text-center mb-5">Collaboration</h2>
       <div class="row justify-content-center text-center">
@@ -153,7 +172,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section bg-light">
+  <section id="projects" class="section bg-light reveal">
     <div class="container">
       <h2 class="text-center mb-5">Projects</h2>
       <div class="row justify-content-center text-center">
@@ -168,7 +187,7 @@
   </section>
 
   <!-- Certifications -->
-  <section id="certifications" class="section">
+  <section id="certifications" class="section reveal">
     <div class="container">
       <h2 class="text-center mb-5">Certifications</h2>
       <div class="row justify-content-center text-center">
@@ -216,7 +235,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section bg-light">
+  <section id="contact" class="section bg-light reveal">
   <div class="container">
     <h2>Contact</h2>
     <p><i class="bi bi-telephone-fill" style="color:#0d3b66; font-size: 1.3rem; margin-right: 8px;"></i> 575-725-4632</p>
